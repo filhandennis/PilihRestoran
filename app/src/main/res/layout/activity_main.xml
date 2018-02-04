@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.filhandennis.activity.pilihrestoran.com.filhandennis.activity.FILHANDENNIS_1202150079_Modul1.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="25dp"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/lblHeaderUtama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Makan Malam"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/lblSubHeaderUtama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="dengan Milea"
+            android:textAlignment="center"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/txtNamaMakanan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:ems="10"
+                android:hint="Nama Menu"
+                android:inputType="textPersonName"
+                android:text="Nasi Uduk" />
+
+            <EditText
+                android:id="@+id/txtPorsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtNamaMakanan"
+                android:layout_marginTop="17dp"
+                android:ems="10"
+                android:hint="Banyak Porsi"
+                android:inputType="number"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btnEatbus"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/txtPorsi"
+                android:layout_marginTop="28dp"
+                android:onClick="eatbus"
+                android:text="Eatbus" />
+
+            <Button
+                android:id="@+id/btnApnormal"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/btnEatbus"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:onClick="apnormal"
+                android:text="Apnormal" />
+        </RelativeLayout>
+
+
+</LinearLayout>
