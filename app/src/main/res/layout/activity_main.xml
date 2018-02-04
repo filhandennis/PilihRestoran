@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="com.filhandennis.activity.pilihrestoran.com.filhandennis.activity.FILHANDENNIS_1202150079_Modul1.MainActivity">
+    tools:context="com.filhandennis.activity.FILHANDENNIS_1202150079_Modul1.MainActivity">
 
 
     <LinearLayout
@@ -75,8 +75,10 @@
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/txtPorsi"
                 android:layout_marginTop="28dp"
+                android:background="?attr/colorAccent"
                 android:onClick="eatbus"
-                android:text="Eatbus" />
+                android:text="Eatbus"
+                android:textColor="@android:color/white" />
 
             <Button
                 android:id="@+id/btnApnormal"
@@ -85,8 +87,10 @@
                 android:layout_alignBottom="@+id/btnEatbus"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
+                android:background="@color/colorAccent"
                 android:onClick="apnormal"
-                android:text="Apnormal" />
+                android:text="Apnormal"
+                android:textColor="@android:color/white" />
         </RelativeLayout>
 
 
